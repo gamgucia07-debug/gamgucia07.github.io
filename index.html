@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio de Gucia Ibovy, étudiante en ingénierie informatique et intelligence artificielle à HESTIM Casablanca.">
+
+    <meta name="theme-color" content="#09090b">
+    <title>Gucia Ibovy | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="header" id="top">
+        <nav class="navbar container" aria-label="Navigation principale">
+            <a class="logo" href="#top" aria-label="Gucia, accueil">
+                Gucia Ibovy <span>/ portfolio</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Ouvrir le menu"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#top">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a class="nav-contact" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero container" aria-labelledby="hero-title">
+            <div class="hero-poster reveal">
+                <div class="poster-topline">
+                    <span>Gucia Ibovy <span class="poster-divider">/</span> Portfolio</span>
+                    <span class="poster-edition">ÉDITION PERSONNELLE · 2026</span>
+                </div>
+
+                <div class="tool-rail" aria-hidden="true">
+                    <span>↖</span><span>⌁</span><span>✳</span><span>◩</span>
+                    <span>⌘</span><span>▱</span><span>✎</span><span>⊞</span>
+                </div>
+
+                <div class="poster-title">
+                    <p class="poster-kicker">Étudiante en ingénierie informatique & IA</p>
+                    <h1 id="hero-title">PORTFOLIO</h1>
+                    <p class="poster-name">GUCIA IBOVY <span>·</span> CASABLANCA</p>
+                </div>
+
+                <div class="poster-bubbles" role="group" aria-label="Explorer le portfolio">
+                    <a class="poster-bubble bubble-about" href="#about">À propos</a>
+                    <a class="poster-bubble bubble-skills" href="#skills">Intelligence artificielle</a>
+                    <a class="poster-bubble bubble-projects" href="#projects">Développement logiciel</a>
+                    <a class="poster-bubble bubble-journey" href="#journey">Robotique &amp; systèmes intelligents</a>
+                </div>
+                <button class="poster-voice" id="poster-voice" type="button"
+                        aria-label="Écouter ma présentation" aria-pressed="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="9" y="2" width="6" height="13" rx="3"></rect>
+                        <path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3m-4 0h8"></path>
+                    </svg>
+                </button>
+                <span class="visually-hidden" id="voice-status" aria-live="polite"></span>
+                <p class="poster-year" aria-label="Année 2026">2026</p>
+                <p class="poster-note">Curiosité en mouvement <span>↗</span></p>
+            </div>
+
+            <div class="hero-intro reveal">
+                <p class="eyebrow">BONJOUR, MOI C'EST GUCIA</p>
+                <p class="hero-description">
+                    Étudiante en première année du cycle préparatoire à HESTIM Casablanca,
+                    je développe mes compétences en informatique et en intelligence artificielle.
+                    Je m'intéresse au développement logiciel, à la robotique et aux systèmes intelligents.
+                </p>
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="#projects">Découvrir mes projets <span>↗</span></a>
+                    <a class="btn btn-secondary" href="#contact">Entrer en contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/gucia-ibovy-873619442/"
+                       target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <span class="social-divider">/</span>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Défiler vers la section suivante">
+                <span></span> DÉFILER POUR EXPLORER
+            </a>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section container" id="about">
+            <div class="section-heading reveal">
+                <p class="eyebrow">01 / ABOUT ME</p>
+                <h2>Un esprit curieux.<br><span class="gradient-text">Une ambition sans limites.</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <article class="about-text glass-card reveal">
+                    <h3>Qui suis-je ?</h3>
+                    <p>
+                        Je suis une étudiante passionnée par les technologies et par la manière
+                        dont elles peuvent répondre à des problèmes concrets.
+                        Mon parcours commence à HESTIM School Casablanca, où je construis
+                        progressivement mes bases en ingénierie informatique et en intelligence artificielle.
+                    </p>
+                    <p>
+                        Je souhaite explorer le développement d'applications, les algorithmes,
+                        l'IA et la conception de systèmes intelligents, notamment à travers la robotique.
+                        Mon objectif est d'apprendre à transformer une idée en une solution utile,
+                        fonctionnelle et bien pensée.
+                    </p>
+                    <p>
+                        Je considère chaque projet comme une occasion de comprendre davantage,
+                        d'expérimenter et de progresser.
+                    </p>
+                </article>
+
+                <div class="about-facts reveal">
+                    <article class="fact-card glass-card">
+                        <span class="fact-number">01</span>
+                        <h3>Software Development</h3>
+                        <p>Créer des applications et concevoir des solutions logicielles.</p>
+                    </article>
+
+                    <article class="fact-card glass-card">
+                        <span class="fact-number">02</span>
+                        <h3>Artificial Intelligence</h3>
+                        <p>Comprendre les algorithmes et explorer les systèmes intelligents.</p>
+                    </article>
+
+                    <article class="fact-card glass-card">
+                        <span class="fact-number">03</span>
+                        <h3>Robotics</h3>
+                        <p>À terme, relier le logiciel au monde physique.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section container" id="skills">
+            <div class="section-heading reveal">
+                <p class="eyebrow">02 / MY TOOLKIT</p>
+                <h2>Mes compétences <span class="gradient-text">en construction.</span></h2>
+                <p class="section-description">
+                    Les technologies que j'apprends et les domaines que je souhaite approfondir.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card glass-card reveal">
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <h3>Développement web</h3>
+                    <p>Les bases de la création d'interfaces web.</p>
+                    <div class="tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <span class="learning-label">En apprentissage</span>
+                </article>
+
+                <article class="skill-card glass-card reveal">
+                    <div class="skill-icon">{ }</div>
+                    <h3>Programmation</h3>
+                    <p>Logique, algorithmique et résolution de problèmes.</p>
+                    <div class="tags">
+                        <span>Algorithmique</span>
+                        <span>Programmation</span>
+                    </div>
+                    <span class="learning-label">En apprentissage</span>
+                </article>
+
+                <article class="skill-card glass-card reveal">
+                    <div class="skill-icon">✳</div>
+                    <h3>Intelligence artificielle</h3>
+                    <p>Découvrir les fondements des systèmes intelligents.</p>
+                    <div class="tags">
+                        <span>IA</span>
+                        <span>Logique</span>
+                    </div>
+                    <span class="learning-label">À approfondir</span>
+                </article>
+
+                <article class="skill-card glass-card reveal">
+                    <div class="skill-icon">⌘</div>
+                    <h3>Outils de développement</h3>
+                    <p>Organiser mon code et suivre mes projets.</p>
+                    <div class="tags">
+                        <span>VS Code</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                    </div>
+                    <span class="learning-label">En progression</span>
+                </article>
+            </div>
+
+            <p class="skills-note">
+                Les niveaux indiqués correspondent à mon parcours d'apprentissage.
+                Cette liste évoluera avec mes projets et mes acquis.
+            </p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section container" id="projects">
+            <div class="section-heading reveal">
+                <p class="eyebrow">03 / SELECTED WORK</p>
+                <h2>Des idées qui prennent <span class="gradient-text">forme.</span></h2>
+                <p class="section-description">
+                    Mes réalisations et expérimentations au fil de mon apprentissage.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card glass-card reveal">
+                    <div class="project-preview preview-portfolio">
+                        <span class="preview-symbol">G.</span>
+                        <span class="preview-caption">PERSONAL WEBSITE</span>
+                        <div class="preview-lines">
+                            <i></i><i></i><i></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>01 / WEB DEVELOPMENT</span>
+                            <span class="project-status">En cours</span>
+                        </div>
+                        <h3>Mon portfolio personnel</h3>
+                        <p>
+                            Un site responsive développé pour présenter mon parcours,
+                            mes compétences et mes futurs projets.
+                        </p>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <a class="project-link" href="#top">
+                            Projet actuel <span>↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-preview preview-ai">
+                        <span class="ai-orb">✳</span>
+                        <span class="preview-caption">INTELLIGENT SYSTEMS</span>
+                        <div class="ai-node node-one"></div>
+                        <div class="ai-node node-two"></div>
+                        <div class="ai-node node-three"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>02 / ARTIFICIAL INTELLIGENCE</span>
+                            <span class="project-status upcoming">À venir</span>
+                        </div>
+                        <h3>Explorations en IA</h3>
+                        <p>
+                            Un futur projet d'apprentissage pour expérimenter les algorithmes
+                            et les principes de l'intelligence artificielle.
+                        </p>
+                        <div class="tags">
+                            <span>Algorithmique</span><span>IA</span>
+                        </div>
+                        <span class="project-link muted-link">Projet à développer</span>
+                    </div>
+                </article>
+
+                <article class="project-card glass-card reveal">
+                    <div class="project-preview preview-robot">
+                        <div class="robot-face">
+                            <span></span><span></span>
+                        </div>
+                        <span class="preview-caption">ROBOTICS & INNOVATION</span>
+                        <div class="robot-base"></div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span>03 / ROBOTICS</span>
+                            <span class="project-status upcoming">À venir</span>
+                        </div>
+                        <h3>Premières expériences en robotique</h3>
+                        <p>
+                            Un espace destiné à documenter mes futurs essais autour
+                            des systèmes embarqués et de la robotique.
+                        </p>
+                        <div class="tags">
+                            <span>Robotique</span><span>Systèmes intelligents</span>
+                        </div>
+                        <span class="project-link muted-link">Projet à développer</span>
+                    </div>
+                </article>
+            </div>
+
+            <p class="projects-note">
+                Les projets marqués « À venir » sont des pistes d'exploration,
+                pas des réalisations déjà terminées.
+            </p>
+        </section>
+
+        <!-- JOURNEY -->
+        <section class="section container" id="journey">
+            <div class="section-heading reveal">
+                <p class="eyebrow">04 / MY JOURNEY</p>
+                <h2>Mon parcours <span class="gradient-text">jusqu'ici.</span></h2>
+            </div>
+
+            <div class="timeline reveal">
+                <article class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-date">2026 · Aujourd'hui</div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-type">FORMATION</span>
+                        <h3>HESTIM School Casablanca</h3>
+                        <p>
+                            Première année du cycle préparatoire en ingénierie informatique
+                            et intelligence artificielle.
+                        </p>
+                        <div class="tags">
+                            <span>Algorithmique</span>
+                            <span>Analyse</span>
+                            <span>Digital Skills</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-date">En cours</div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-type">APPRENTISSAGE PERSONNEL</span>
+                        <h3>Construire des bases solides</h3>
+                        <p>
+                            Apprendre le développement web, pratiquer la programmation
+                            et créer mes premières réalisations.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-date">Objectif futur</div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-type">VISION</span>
+                        <h3>Ingénierie, IA et robotique</h3>
+                        <p>
+                            Approfondir mes compétences et participer à des projets
+                            technologiques concrets et innovants.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section container" id="contact">
+            <div class="contact-panel reveal">
+                <p class="eyebrow">05 / LET'S CONNECT</p>
+                <h2>Une idée, un projet<br>ou une <span class="gradient-text">opportunité ?</span></h2>
+                <p>
+                    Je suis au début de mon parcours et toujours prête à apprendre,
+                    à échanger et à découvrir de nouvelles perspectives technologiques.
+                </p>
+
+                <div class="contact-actions">
+                    <a class="btn btn-primary"
+                       href="https://www.linkedin.com/in/gucia-ibovy-873619442/"
+                       target="_blank" rel="noopener noreferrer">
+                        Me retrouver sur LinkedIn ↗
+                    </a>
+                    <a class="btn btn-secondary"
+                       href="mailto:TON-EMAIL@EXEMPLE.COM">
+                        M'envoyer un e-mail
+                    </a>
+                </div>
+
+                <p class="contact-small">
+                    Casablanca, Maroc · Ingénierie informatique & IA
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer container">
+        <a class="logo" href="#top">Gucia Ibovy <span>/ portfolio</span></a>
+
+        <a href="#top" class="back-top">Retour en haut ↑</a>
+        <span class="copyright">© <span id="year">2026</span></span>
+    </footer>
+</body>
+</html>
